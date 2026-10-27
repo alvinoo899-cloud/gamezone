@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameZone - Portal Informasi Game Terlengkap & Modern</title>
+
+  <!-- Meta SEO -->
+  <meta name="description"
+    content="GameZone adalah website informasi game modern dan keren. Temukan ulasan, info genre, dan rekomendasi game favorit seperti Valorant, Minecraft, GTA V, MLBB, Free Fire, dan PUBG.">
+  <meta name="theme-color" content="#0a0a14">
+
+  <!-- Google Fonts: Outfit (modern body/headings) & Rajdhani (gaming accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- File CSS Eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+       BACKGROUND GLOW EFFECTS (Ambient Neon)
+       ========================================= -->
+  <div class="ambient-glow glow-purple"></div>
+  <div class="ambient-glow glow-blue"></div>
+  <div class="ambient-glow glow-cyan"></div>
+
+  <!-- =========================================
+       NAVBAR (Navigation Bar)
+       ========================================= -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Logo GameZone -->
+      <a href="#home" class="logo">
+        <div class="logo-icon-box">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+        <span class="logo-text">Game<span class="neon-text">Zone</span></span>
+      </a>
+
+      <!-- Menu Navigasi Desktop -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#games" class="nav-link">Games</a>
+          </li>
+          <li class="nav-item">
+            <a href="#popular" class="nav-link">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Button -->
+      <div class="nav-actions">
+        <a href="#games" class="btn btn-sm btn-outline nav-explore-btn">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Trending</span>
+        </a>
+        <!-- Hamburger Button untuk Mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Buka Menu Navigasi">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================
+       HERO SECTION
+       ========================================= -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <!-- Hero Tagline Badge -->
+        <div class="hero-badge">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <span>THE ULTIMATE GAMING HUB</span>
+        </div>
+
+        <!-- Judul Utama -->
+        <h1 class="hero-title">
+          WELCOME TO <span class="neon-gradient">GAMEZONE</span>
+        </h1>
+
+        <!-- Deskripsi Hero -->
+        <p class="hero-desc">
+          Discover Your Next Favorite Game. Dapatkan info lengkap, ulasan seru, dan rekomendasi game terbaik dunia mulai
+          dari aksi menegangkan hingga pertempuran Battle Royale!
+        </p>
+
+        <!-- Tombol Aksi Hero -->
+        <div class="hero-buttons">
+          <a href="#games" class="btn btn-primary" id="explore-btn">
+            <i class="fa-solid fa-compass"></i>
+            <span>Explore Games</span>
+          </a>
+          <a href="#popular" class="btn btn-secondary">
+            <i class="fa-solid fa-star"></i>
+            <span>Popular Games</span>
+          </a>
+        </div>
+
+        <!-- Highlight Statistik Singkat -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Featured Games</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Genre Filters</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">4.8</span>
+            <span class="stat-label">Avg Rating ★</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card (Dekorasi Interaktif) -->
+      <div class="hero-visual">
+        <div class="hero-card-glow"></div>
+        <div class="hero-card">
+          <div class="hero-card-badge">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Game of the Week</span>
+          </div>
+          <div class="hero-card-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Valorant_cover.jpg" alt="Valorant Preview"
+              class="hero-card-img"
+              onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80'">
+            <div class="hero-card-tag">FPS • TACTICAL</div>
+          </div>
+          <div class="hero-card-info">
+            <div class="hero-card-title-row">
+              <h3>Valorant</h3>
+              <div class="hero-rating"><i class="fa-solid fa-star"></i> 4.8</div>
+            </div>
+            <p>5v5 character-based tactical shooter by Riot Games.</p>
+            <div class="hero-card-chips">
+              <span>PC</span>
+              <span>Online PvP</span>
+              <span>Esports</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       GAMES & POPULAR SECTION
+       ========================================= -->
+  <section class="games-section" id="games">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header" id="popular">
+        <div class="section-tag">
+          <i class="fa-solid fa-fire"></i>
+          <span>DISCOVER & PLAY</span>
+        </div>
+        <h2 class="section-title">
+          Popular <span class="neon-text">Games</span>
+        </h2>
+        <p class="section-desc">
+          Jelajahi judul-judul game legendaris yang paling diminati komunitas saat ini. Gunakan fitur pencarian dan
+          filter genre untuk menemukan game yang cocok untukmu!
+        </p>
+      </div>
+
+      <!-- Controls: Pencarian dan Filter Kategori -->
+      <div class="controls-wrapper">
+
+        <!-- Search Box -->
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="search-input" placeholder="Cari nama game (contoh: Valorant, GTA V, PUBG)..."
+            autocomplete="off" aria-label="Cari Game">
+          <button id="clear-search" class="clear-search-btn" title="Hapus Pencarian" aria-label="Hapus Pencarian">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Filter Kategori Buttons -->
+        <div class="filter-buttons" id="filter-container">
+          <button class="filter-btn active" data-category="all">
+            <i class="fa-solid fa-border-all"></i>
+            <span>All Games</span>
+          </button>
+          <button class="filter-btn" data-category="Action">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Action</span>
+          </button>
+          <button class="filter-btn" data-category="Adventure">
+            <i class="fa-solid fa-compass"></i>
+            <span>Adventure</span>
+          </button>
+          <button class="filter-btn" data-category="FPS">
+            <i class="fa-solid fa-crosshairs"></i>
+            <span>FPS</span>
+          </button>
+          <button class="filter-btn" data-category="Battle Royale">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Battle Royale</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Indikator Jumlah Hasil -->
+      <div class="results-bar">
+        <span id="results-count" class="results-count">Menampilkan 6 game</span>
+        <span id="active-filter-indicator" class="active-filter-indicator">Kategori: <strong>All Games</strong></span>
+      </div>
+
+      <!-- Grid Kartu Game (Diisi dinamis oleh script.js) -->
+      <div class="games-grid" id="games-grid">
+        <!-- Kartu game akan di-generate secara otomatis lewat JavaScript -->
+      </div>
+
+      <!-- Pesan jika game tidak ditemukan -->
+      <div class="no-results" id="no-results" style="display: none;">
+        <div class="no-results-icon">
+          <i class="fa-solid fa-ghost"></i>
+        </div>
+        <h3>Game Tidak Ditemukan</h3>
+        <p>Tidak ada game yang sesuai dengan kata kunci atau filter yang kamu pilih.</p>
+        <button class="btn btn-secondary btn-sm" id="reset-filter-btn">
+          <i class="fa-solid fa-rotate-left"></i>
+          <span>Reset Pencarian & Filter</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================
+       ABOUT SECTION
+       ========================================= -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>TENTANG KAMI</span>
+        </div>
+        <h2 class="section-title">
+          Kenapa Memilih <span class="neon-text">GameZone</span>?
+        </h2>
+        <p class="section-desc">
+          GameZone dirancang khusus untuk mempermudah gamer menemukan informasi game terkini dengan antarmuka yang
+          cepat, modern, dan nyaman di mata.
+        </p>
+      </div>
+
+      <!-- Feature Grid Cards -->
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon purple">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3>Filter & Pencarian Instan</h3>
+          <p>Cari game berdasarkan judul favoritmu atau saring kategori seperti Action, Adventure, FPS, dan Battle
+            Royale tanpa reload halaman.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon blue">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>Informasi Komprehensif</h3>
+          <p>Dapatkan ringkasan cerita, informasi developer, tahun rilis, platform yang didukung, hingga rating
+            penilaian komunitas secara akurat.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon cyan">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Desain Modern & Responsif</h3>
+          <p>Tampilan neon dark-mode futuristik yang dioptimasi sempurna di semua layar, baik laptop, tablet, hingga
+            smartphone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       MODAL DETAIL GAME
+       ========================================= -->
+  <div class="modal-overlay" id="game-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+
+      <!-- Tombol Close Modal -->
+      <button class="modal-close-btn" id="modal-close" aria-label="Tutup Detail Game">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Header Banner -->
+      <div class="modal-banner">
+        <img src="" alt="" id="modal-image" class="modal-banner-img">
+        <div class="modal-banner-overlay"></div>
+        <div class="modal-badge-row">
+          <span class="modal-badge category-badge" id="modal-category">Category</span>
+          <span class="modal-badge rating-badge" id="modal-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+        </div>
+      </div>
+
+      <!-- Modal Body Content -->
+      <div class="modal-body">
+
+        <div class="modal-title-row">
+          <h2 class="modal-title" id="modal-title">Game Title</h2>
+          <span class="modal-year" id="modal-year">2024</span>
+        </div>
+
+        <!-- Meta Info Pills -->
+        <div class="modal-meta-pills">
+          <div class="meta-pill">
+            <i class="fa-solid fa-code"></i>
+            <span>Developer: <strong id="modal-developer">Developer</strong></span>
+          </div>
+          <div class="meta-pill">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Genre: <strong id="modal-genre-tags">Tags</strong></span>
+          </div>
+        </div>
+
+        <!-- Deskripsi Lengkap -->
+        <div class="modal-section-title">
+          <i class="fa-solid fa-align-left"></i>
+          <span>Deskripsi Game</span>
+        </div>
+        <p class="modal-description" id="modal-description">
+          Deskripsi lengkap tentang gameplay, mekanisme, dan keseruan bermain game ini.
+        </p>
+
+        <!-- Fitur Unggulan (Highlights) -->
+        <div class="modal-section-title">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>Fitur Unggulan</span>
+        </div>
+        <div class="modal-highlights" id="modal-highlights">
+          <!-- Item fitur dimasukkan lewat JS -->
+        </div>
+
+        <!-- Platform Tersedia -->
+        <div class="modal-section-title">
+          <i class="fa-solid fa-display"></i>
+          <span>Platform Tersedia</span>
+        </div>
+        <div class="modal-platforms" id="modal-platforms">
+          <!-- Icon platform dimasukkan lewat JS -->
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="modal-footer">
+          <button class="btn btn-secondary" id="modal-btn-close">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Kembali</span>
+          </button>
+          <button class="btn btn-primary" id="modal-btn-action">
+            <i class="fa-solid fa-play"></i>
+            <span>Info Gameplay</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <div class="logo-icon-box">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <span class="logo-text">Game<span class="neon-text">Zone</span></span>
+        </a>
+        <p class="footer-tagline">
+          Pusat referensi dan ulasan game terpopuler untuk gamer santai maupun pro player.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Komunitas & Media</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon" title="Discord" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" class="social-icon" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon" title="Twitch" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+          <a href="#" class="social-icon" title="Instagram" aria-label="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 <strong>GameZone</strong>. Dibuat dengan cinta untuk para pecinta game.</p>
+        <p class="footer-sub">HTML • CSS • JavaScript Vanilla</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" title="Kembali ke Atas" aria-label="Kembali ke Atas">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+
+  <!-- File JavaScript Eksternal -->
+  <script src="script.js"></script>
+</body>
+
+</html>
